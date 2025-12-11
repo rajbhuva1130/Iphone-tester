@@ -4,19 +4,20 @@ module.exports = {
   content: ["./app/**/*.{js,jsx,ts,tsx}", "./components/**/*.{js,jsx,ts,tsx}", "./ai/**/*.{ts,tsx}"],
   presets: [require("nativewind/preset")],
   theme: {
-    extend: {
-      colors: {
-        background: "#09090b", // zinc-950
-        surface: "#18181b", // zinc-900
-        primary: "#3b82f6", // blue-500
-        secondary: "#8b5cf6", // violet-500
-        success: "#22c55e", // green-500
-        danger: "#ef4444", // red-500
-        warning: "#eab308", // yellow-500
-        text: "#f4f4f5", // zinc-100
-        muted: "#a1a1aa", // zinc-400
-        border: "#27272a", // zinc-800
-      },
+    colors: {
+      white: "#FFFFFF",
+      black: "#000000",
+      transparent: "transparent",
+      background: "#000000", // Black for OLED
+      surface: "#1c1c1e", // Slightly lighter functionality gray (Apple style)
+      primary: "#007AFF", // System Blue
+      secondary: "#5E5CE6", // System Indigo
+      success: "#34C759", // System Green
+      danger: "#FF3B30", // System Red
+      warning: "#FFCC00", // System Yellow
+      text: "#FFFFFF", // Pure White
+      muted: "#EBEBF599", // Apple Label 2 (60% white) - much brighter than before
+      border: "#3a3a3c", // Separator color
     },
   },
   plugins: [],
