@@ -70,7 +70,7 @@ export default function GyroscopeTest() {
             { label: 'Z', value: mag.z.toFixed(2), accent: 'warning' }
           ]}
         />
-        <Text className="mt-3 text-muted">Move device to see values change.</Text>
+        <Text className="mt-3 text-muted" style={{ color: '#a1a1aa' }}>Move device to see values change.</Text>
         <View className="mt-3 flex-row gap-3">
           <ActionButton label="Mark Pass" onPress={markPass} style={{ flex: 1 }} />
           <ActionButton label="Mark Fail" variant="ghost" onPress={markFail} style={{ flex: 1 }} />

@@ -80,8 +80,8 @@ export default function MicrophoneTest() {
           <ActionButton label="Play Recording" variant="ghost" onPress={play} disabled={!uri} />
         </View>
         <View className="mt-4 rounded-xl border border-border bg-black/40 p-3">
-          <Text className="text-white">Status: {recording ? 'Recording…' : uri ? 'Ready to play' : 'Idle'}</Text>
-          <Text className="text-muted">URI: {uri ?? 'N/A'}</Text>
+          <Text className="text-white font-semibold" style={{ color: 'white' }}>Status: {recording ? 'Recording…' : uri ? 'Ready to play' : 'Idle'}</Text>
+          <Text className="text-muted" style={{ color: '#a1a1aa' }}>URI: {uri ?? 'N/A'}</Text>
         </View>
       </Panel>
     </ScrollView>

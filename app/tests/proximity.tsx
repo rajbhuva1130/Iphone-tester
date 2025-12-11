@@ -19,7 +19,7 @@ export default function ProximityTest() {
   return (
     <ScrollView className="flex-1 bg-background px-4 pt-4">
       <Panel title="Proximity Sensor" subtitle="Simulated for PWA / web">
-        <Text className="mb-3 text-muted">
+        <Text className="mb-3 text-muted" style={{ color: '#a1a1aa' }}>
           Native proximity APIs are limited on web. Use this control to simulate near/far states and confirm UI reacts.
         </Text>
         <View className="flex-row gap-3">
@@ -30,7 +30,7 @@ export default function ProximityTest() {
             onPress={() => updateResult('proximity', { status: 'fail', notes: 'Sensor stuck or UI unresponsive' })}
           />
         </View>
-        <Text className="mt-3 text-white">Current state: {near ? 'Near' : 'Far'}</Text>
+        <Text className="mt-3 text-white" style={{ color: 'white' }}>Current state: {near ? 'Near' : 'Far'}</Text>
       </Panel>
     </ScrollView>
   );

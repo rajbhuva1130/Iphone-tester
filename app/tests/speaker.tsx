@@ -88,16 +88,16 @@ export default function SpeakerTest() {
   return (
     <ScrollView className="flex-1 bg-background px-4 pt-4">
       <Panel title="Speaker Test" subtitle="Verify audio output with music playback">
-        <Text className="text-muted mb-4">
+        <Text className="text-muted mb-4" style={{ color: '#a1a1aa' }}>
           Replace `assets/audio/test_audio.mp3` with your own file to test specific frequencies.
         </Text>
 
         <View className="bg-surface rounded-xl p-4 items-center mb-4 border border-border">
-          <Text className="text-xl font-bold text-white mb-2">Test Audio Track</Text>
-          <Text className="text-muted text-sm mb-6">Stereo Separation Test</Text>
+          <Text className="text-xl font-bold text-white mb-2" style={{ color: 'white' }}>Test Audio Track</Text>
+          <Text className="text-muted text-sm mb-6" style={{ color: '#a1a1aa' }}>Stereo Separation Test</Text>
 
           <View className="w-full flex-row items-center gap-3 mb-2">
-            <Text className="text-muted text-xs font-variant-numeric">{formatTime(position)}</Text>
+            <Text className="text-muted text-xs font-variant-numeric" style={{ color: '#a1a1aa' }}>{formatTime(position)}</Text>
             <Slider
               style={{ flex: 1, height: 40 }}
               minimumValue={0}
@@ -108,7 +108,7 @@ export default function SpeakerTest() {
               maximumTrackTintColor="#555"
               thumbTintColor="#3b82f6"
             />
-            <Text className="text-muted text-xs font-variant-numeric">{formatTime(duration)}</Text>
+            <Text className="text-muted text-xs font-variant-numeric" style={{ color: '#a1a1aa' }}>{formatTime(duration)}</Text>
           </View>
 
           <View className="flex-row items-center gap-8 mt-2">

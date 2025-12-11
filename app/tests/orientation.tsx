@@ -46,7 +46,7 @@ export default function OrientationTest() {
     <ScrollView className="flex-1 bg-background px-4 pt-4">
       <Panel title="Orientation" subtitle="Rotate device to see changes">
         <View className="items-center py-6">
-          <Text className="text-3xl font-bold text-primary">{orientation}</Text>
+          <Text className="text-3xl font-bold text-primary" style={{ color: '#007AFF' }}>{orientation}</Text>
         </View>
         <View className="flex-row gap-3">
           <ActionButton label="Lock Portrait" variant="secondary" onPress={lock} style={{ flex: 1 }} />

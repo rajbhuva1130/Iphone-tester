@@ -32,10 +32,10 @@ const TestCard = ({ title, description, href, status = 'pending' }: Props) => {
     <Link href={href as any} asChild>
       <Pressable className="w-full rounded-2xl border border-border bg-surface/80 p-4 shadow-md shadow-black/30">
         <View className="mb-2 flex-row items-center justify-between">
-          <Text className="text-lg font-semibold text-white">{title}</Text>
+          <Text className="text-lg font-semibold text-white" style={{ color: 'white' }}>{title}</Text>
           <Text className={`text-xs font-medium ${statusColor[status]}`}>{statusLabel[status]}</Text>
         </View>
-        <Text className="text-sm text-muted">{description}</Text>
+        <Text className="text-sm text-muted" style={{ color: 'rgba(235, 235, 245, 0.6)' }}>{description}</Text>
       </Pressable>
     </Link>
   );

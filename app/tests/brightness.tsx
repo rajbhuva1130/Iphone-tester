@@ -32,7 +32,7 @@ export default function BrightnessTest() {
   return (
     <ScrollView className="flex-1 bg-background px-4 pt-4">
       <Panel title="Brightness Sweep" subtitle="Move between minimum and maximum brightness">
-        <Text className="mb-3 text-muted">
+        <Text className="mb-3 text-muted" style={{ color: '#a1a1aa' }}>
           We temporarily adjust screen brightness for this test. Settings are restored by the system afterward.
         </Text>
         <View className="flex-row gap-3">
@@ -40,7 +40,7 @@ export default function BrightnessTest() {
           <ActionButton label="Max Brightness" onPress={() => setValue(1)} />
         </View>
         <View className="mt-4 rounded-xl border border-border bg-black/40 p-3">
-          <Text className="text-white">Current level: {level !== null ? level.toFixed(2) : 'Loading…'}</Text>
+          <Text className="text-white" style={{ color: 'white' }}>Current level: {level !== null ? level.toFixed(2) : 'Loading…'}</Text>
         </View>
       </Panel>
     </ScrollView>

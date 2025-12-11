@@ -29,7 +29,7 @@ export default function DeadPixels() {
       className="items-center justify-center"
     >
       <View className="absolute bottom-10 flex-row gap-4 rounded-full bg-black/60 px-4 py-2">
-        <Text className="text-white">Tap to cycle colors • Long press to exit</Text>
+        <Text className="text-white" style={{ color: 'white' }}>Tap to cycle colors • Long press to exit</Text>
       </View>
       <View className="absolute top-10 flex-row gap-4">
         <TouchableOpacity onPress={markPass} className="rounded-full bg-black/60 px-4 py-2">

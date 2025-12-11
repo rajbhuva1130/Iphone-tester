@@ -37,7 +37,7 @@ export default function AccelerometerTest() {
             { label: 'Z', value: data.z.toFixed(3), accent: 'warning' }
           ]}
         />
-        <Text className="mt-3 text-muted">Values should change as you move or tilt the device.</Text>
+        <Text className="mt-3 text-muted" style={{ color: '#a1a1aa' }}>Values should change as you move or tilt the device.</Text>
 
         <View className="mt-4 flex-row gap-3">
           <ActionButton

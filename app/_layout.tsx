@@ -2,6 +2,7 @@ import '../global.css';
 
 import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
+import { View } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 export default function Layout() {
@@ -13,7 +14,7 @@ export default function Layout() {
                     headerStyle: { backgroundColor: '#09090b' },
                     headerTintColor: '#f4f4f5',
                     headerTitleStyle: { fontWeight: '600' },
-                    contentStyle: { backgroundColor: '#09090b' }
+                    contentStyle: { backgroundColor: '#09090b' },
                 }}
             >
                 <Stack.Screen name="index" options={{ title: 'Hardware Tester' }} />

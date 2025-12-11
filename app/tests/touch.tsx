@@ -65,8 +65,8 @@ export default function TouchTest() {
     <SafeAreaView className="flex-1 bg-background">
       <Stack.Screen options={{ headerShown: false }} />
       <View className="px-4 py-2 flex-row justify-between items-center z-10 bg-background/90">
-        <Text className="text-white font-bold">Touch Test</Text>
-        <Text className="text-muted text-xs">
+        <Text className="text-white font-bold" style={{ color: 'white' }}>Touch Test</Text>
+        <Text className="text-muted text-xs" style={{ color: '#a1a1aa' }}>
           {touched.size} / {TOTAL_CELLS}
         </Text>
       </View>

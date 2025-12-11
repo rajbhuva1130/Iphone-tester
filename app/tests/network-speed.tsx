@@ -30,7 +30,7 @@ export default function NetworkSpeedTest() {
                 { label: 'Latency (ms)', value: latency === -1 ? 'Unreachable' : `${latency} ms`, accent: latency > 200 ? 'warning' : 'success' }
               ]}
             />
-            <Text className="mt-2 text-muted">For full speed tests, use a dedicated network benchmarking app.</Text>
+            <Text className="mt-2 text-muted" style={{ color: '#a1a1aa' }}>For full speed tests, use a dedicated network benchmarking app.</Text>
           </View>
         )}
       </Panel>

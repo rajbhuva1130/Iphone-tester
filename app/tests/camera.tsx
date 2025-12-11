@@ -67,12 +67,12 @@ export default function CameraTest() {
       <Panel title="Camera Preview" subtitle="Toggle front/back, test torch, and capture a sample frame">
         {permission?.granted === false && (
           <TouchableOpacity onPress={ensurePermission}>
-            <Text className="text-warning">Grant camera access to continue.</Text>
+            <Text className="text-warning font-bold">Grant camera access to continue.</Text>
           </TouchableOpacity>
         )}
         {Platform.OS === 'web' ? (
           <View className="h-64 items-center justify-center rounded-2xl border border-border bg-black/50">
-            <Text className="text-muted">Camera preview not available on PWA emulator.</Text>
+            <Text className="text-muted text-center" style={{ color: '#a1a1aa' }}>Camera preview not available on PWA emulator.</Text>
           </View>
         ) : (
           <CameraView
@@ -95,7 +95,7 @@ export default function CameraTest() {
                 onPress={() => setZoomLevel(z)}
                 className={`px-3 py-1 rounded-full ${Math.abs(zoom - z) < 0.001 ? 'bg-primary' : 'bg-surface border border-border'}`}
               >
-                <Text className="text-white text-xs">{z === 0 ? '1x' : (z * 10).toFixed(1) + 'x'}</Text>
+                <Text className="text-white text-xs" style={{ color: 'white' }}>{z === 0 ? '1x' : (z * 10).toFixed(1) + 'x'}</Text>
               </TouchableOpacity>
             ))}
           </View>
@@ -109,7 +109,7 @@ export default function CameraTest() {
 
         {preview && (
           <View className="mt-4">
-            <Text className="mb-2 text-sm text-muted">Last capture</Text>
+            <Text className="mb-2 text-sm text-muted" style={{ color: '#a1a1aa' }}>Last capture</Text>
             <Image source={{ uri: preview }} style={{ height: 160, borderRadius: 12 }} />
           </View>
         )}

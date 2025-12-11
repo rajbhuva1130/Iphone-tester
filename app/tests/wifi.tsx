@@ -56,7 +56,7 @@ export default function WifiTest() {
             ]}
           />
           {Platform.OS === 'ios' && (
-            <Text className="mt-2 text-xs text-muted">SSID may be hidden on iOS due to privacy limitations.</Text>
+            <Text className="mt-2 text-xs text-muted" style={{ color: '#a1a1aa' }}>SSID may be hidden on iOS due to privacy limitations.</Text>
           )}
         </View>
       </Panel>

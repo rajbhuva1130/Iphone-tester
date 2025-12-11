@@ -33,9 +33,9 @@ export default function FlashlightTest() {
   return (
     <ScrollView className="flex-1 bg-background px-4 pt-4">
       <Panel title="Flashlight" subtitle="Uses camera torch API">
-        {permission?.granted === false && <Text className="text-warning mb-2">Grant camera access to enable torch.</Text>}
+        {permission?.granted === false && <Text className="text-warning mb-2" style={{ color: '#FFCC00' }}>Grant camera access to enable torch.</Text>}
         {Platform.OS === 'web' ? (
-          <Text className="text-muted">Torch is not available on web; toggling will be simulated.</Text>
+          <Text className="text-muted" style={{ color: '#a1a1aa' }}>Torch is not available on web; toggling will be simulated.</Text>
         ) : (
           <CameraView ref={cameraRef} style={{ height: 200, borderRadius: 12 }} enableTorch={torch} />
         )}

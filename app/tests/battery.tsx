@@ -47,7 +47,7 @@ export default function BatteryTest() {
             { label: 'State', value: state, accent: 'muted' }
           ]}
         />
-        <Text className="mt-2 text-muted">
+        <Text className="mt-2 text-muted" style={{ color: '#a1a1aa' }}>
           Battery level below 20% may indicate rapid discharge. Re-test after a full charge if unexpected.
         </Text>
       </Panel>

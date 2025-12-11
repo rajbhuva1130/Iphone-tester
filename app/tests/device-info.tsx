@@ -67,8 +67,8 @@ export default function DeviceInfoTest() {
     <View
       className={`flex-row justify-between py-3 px-2 border-b border-border ${index % 2 === 0 ? 'bg-surface/50' : 'bg-transparent'}`}
     >
-      <Text className="text-muted font-medium">{item.label}</Text>
-      <Text className={`font-semibold ${item.highlight ? 'text-primary' : 'text-white'}`}>
+      <Text className="text-muted font-medium" style={{ color: '#a1a1aa' }}>{item.label}</Text>
+      <Text className={`font-semibold ${item.highlight ? 'text-primary' : 'text-white'}`} style={{ color: item.highlight ? '#007AFF' : 'white' }}>
         {item.value}
       </Text>
     </View>
@@ -79,8 +79,8 @@ export default function DeviceInfoTest() {
       <Panel title="Identity & Specs" subtitle="Compare with ex-factory specs manually">
         <View className="bg-surface rounded-xl overflow-hidden border border-border mb-4">
           <View className="flex-row justify-between p-3 bg-card border-b border-border">
-            <Text className="text-muted text-xs uppercase font-bold tracking-wider">Item</Text>
-            <Text className="text-muted text-xs uppercase font-bold tracking-wider">Read Value</Text>
+            <Text className="text-muted text-xs uppercase font-bold tracking-wider" style={{ color: '#a1a1aa' }}>Item</Text>
+            <Text className="text-muted text-xs uppercase font-bold tracking-wider" style={{ color: '#a1a1aa' }}>Read Value</Text>
           </View>
           {rows.map((r, i) => (
             <TableRow key={r.label} item={r} index={i} />
