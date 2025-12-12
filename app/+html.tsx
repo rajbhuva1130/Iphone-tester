@@ -14,9 +14,11 @@ export default function Root({ children }: PropsWithChildren) {
                     name="viewport"
                     content="width=device-width, initial-scale=1, shrink-to-fit=no"
                 />
+                
+                {/* CRITICAL FIX: Base tag for GitHub Pages subdirectory deployment */}
+                <base href="/Iphone-tester/" />
 
-                {/* 
-          Disable body scrolling on web. This makes ScrollView components work closer to how they do on native. 
+                {/* Disable body scrolling on web. This makes ScrollView components work closer to how they do on native. 
           However, body scrolling is often nice, but for this full screen app apps, we might want it off.
         */}
                 <ScrollViewStyleReset />
