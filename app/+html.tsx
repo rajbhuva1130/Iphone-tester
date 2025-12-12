@@ -24,7 +24,7 @@ export default function Root({ children }: PropsWithChildren) {
                 {/* Add any additional <head> elements that you want globally available on web... */}
 
                 {/* Register Service Worker with base-path awareness */}
-                <script
+                {/* <script
                     dangerouslySetInnerHTML={{
                         __html: `
               if ('serviceWorker' in navigator) {
@@ -39,7 +39,7 @@ export default function Root({ children }: PropsWithChildren) {
               }
             `,
                     }}
-                />
+                /> */}
             </head>
             <body>{children}</body>
         </html>
