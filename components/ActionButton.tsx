@@ -32,7 +32,7 @@ const ActionButton = ({ label, onPress, variant = 'primary', disabled, style }: 
       className={clsx(base, variants[variant], disabled && 'opacity-60')}
       style={style}
     >
-      <Text className={textVariants[variant]}>{label}</Text>
+      <Text className={textVariants[variant]} style={{ color: 'white' }}>{label}</Text>
     </TouchableOpacity>
   );
 };

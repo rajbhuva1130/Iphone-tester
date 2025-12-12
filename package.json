@@ -1,7 +1,7 @@
 {
   "name": "iphone-hardware-tester",
   "version": "1.0.0",
-  "homepage": "https://rajbhuva1130.github.io/Iphone-tester",
+  "homepage": "https://rajbhuva1130.github.io/Iphone-tester/",
   "main": "expo-router/entry",
   "scripts": {
     "start": "expo start",
